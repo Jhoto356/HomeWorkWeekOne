@@ -1,11 +1,18 @@
 package cammons.sources;
 
 public class StringES {
-    public String txtMyName = "Hola mi nombre es ";
+    /** ATTRIBUTES **/
+    public String txtMyName = "Hola soy ";
     public String txtMyAge = ", tengo ";
     public String txtYear = " años, ";
     public String txtMyGenre = "soy ";
     public String txtMyHeight = ", y mido ";
-    public String txtPointFinal = ".";
+    public String txtTriangleArea = "El area del tringulo es: ";
+
+    /** METHODS **/
+    public void  printShortcut(String message) {
+        System.out.println(message);
+
+    }
 
 }

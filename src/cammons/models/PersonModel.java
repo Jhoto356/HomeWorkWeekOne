@@ -6,11 +6,12 @@ public class PersonModel {
     /** ATTRIBUTES **/
     String name;
     int age;
-    char genre;
+    String genre;
     double height;
+    StringES stringES = new StringES();
 
     /** CONSTRUCTOR **/
-    public PersonModel (String pName,  int pAge, char pGenre, double pHeight) {
+    public PersonModel (String pName,  int pAge, String pGenre, double pHeight) {
         name = pName;
         age = pAge;
         genre = pGenre;
@@ -20,12 +21,16 @@ public class PersonModel {
 
     /** METHODS **/
     public void sendGreeting() {
-        String message = new StringES().
-
-    }
-
-    private void printShortcut(String finalMessage) {
-        System.out.println(finalMessage);
+        String onePart = stringES.txtMyName;
+        String twoPart = name;
+        String threePart = stringES.txtMyAge;
+        String fourPart = String.valueOf(age);
+        String fivePart = stringES.txtMyGenre;
+        String sixPart = genre;
+        String sevenPart = stringES.txtMyHeight;
+        String eightPart = String.valueOf(height);
+        String message = onePart + twoPart + threePart + fourPart + stringES.txtYear + fivePart + sixPart + sevenPart + eightPart + ".";
+        stringES.printShortcut(message);
 
     }
 
